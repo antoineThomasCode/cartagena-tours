@@ -1,0 +1,23 @@
+{
+  "name": "cartagena-tours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "sass --watch assets/sass/index.scss  assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoineThomasCode/cartagena-tours.git"
+  },
+  "author": "Antoine Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoineThomasCode/cartagena-tours/issues"
+  },
+  "homepage": "https://github.com/antoineThomasCode/cartagena-tours#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

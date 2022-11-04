@@ -1,0 +1,20 @@
+
+@import "./base/reset";
+@import "./base/tools";
+@import "./abstracts/functions";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./base/typography";
+@import "./base/base";
+@import "./components/buttons";
+@import "./components/animations";
+@import "./layout/footer";
+
+/* pages */
+@import "./pages/homepage.scss";
+@import "./pages/service.scss";
+@import "./pages/blog.scss";
+
+/* components */
+
+@import "./components/carousel-service.scss";

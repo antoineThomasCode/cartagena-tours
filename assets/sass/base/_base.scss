@@ -1,0 +1,93 @@
+/* bases */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+h1, h3 , h4, h5 , h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+h1 {
+    //styleName: H1 desktop
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+h2 {
+    //styleName: H2 desktop;
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 35px;
+    letter-spacing: 0.12em;
+}
+h3 {
+    //styleName: H3 desktop;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+h4 {
+//styleName: H4 desktop;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+h5 {
+    //styleName: H5 desktop;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+h6 {
+    //styleName: H6 desktop;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+@media screen and (max-width : 900px) {
+    body {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    h1 {
+        //styleName: H1 desktop
+        font-size: 26px;
+        line-height: 30px;
+    }
+    h2 {
+        //styleName: H2 desktop;
+        font-size: 20px;
+        line-height: 27.28px;
+    }
+    h3 {
+        //styleName: H3 desktop;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    h4 {
+    //styleName: H4 desktop;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    h5 {
+        //styleName: H5 desktop;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    h6 {
+        //styleName: H6 desktop;
+        font-size: 13px;
+        line-height: 16px;
+    }
+}

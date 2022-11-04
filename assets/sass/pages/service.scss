@@ -1,0 +1,234 @@
+.services-cartagena {
+    display: flex;
+    width: 100%;
+    &__content {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+    &__title {
+        flex-basis: 100%;
+    }
+    &__sub-title {
+        font-weight: 500;
+    }
+    &__infos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        align-items: center;
+
+    }
+    &__category {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $bleu-fonce;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+    }
+    &__reviews {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        color: $gris-fonce;
+        margin-right: 20px;
+    }
+    &__location {
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        color: $gris-fonce;
+        .icon-location {
+            margin-right: 10px;
+        }
+    }
+    &__columns {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        height: 550px;
+
+    }
+    &__carousel {
+        display: flex;
+        flex-basis: 48%;
+    }
+    &__reservation {
+        display: flex;
+        flex-basis: 48%;
+        background-color: rgba(97, 170, 166, 0.3);
+        padding: 40px 30px;
+        border-radius: 20px;
+        
+    }
+    &__reservation-card {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+
+    }
+    .reservation-card__header {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding-bottom: 10px;
+        border-bottom: solid 1px $bleu-fonce;
+        height: 130px;
+        .price {
+            font-family: 'Open Sans';
+            display: flex;
+            flex-basis: 100%;
+            color: $typo-fonce;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            letter-spacing: 0em;
+            margin-bottom: 20px;
+        }
+        .low-cost {
+            color: #5C5C5C;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .like {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            top: 0;
+            background-color: #E3A198;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px 0px #00000040;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .reservation-card__tuto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            > div:nth-child(1) {
+                margin-right: 10px;
+            }
+            > div:nth-child(2) {
+                > h4 {
+                    margin-bottom: 9px;
+                }
+            }
+        }
+    }
+    .reservation-card__reservaton-plugin {
+        padding: 40px 0;
+    }
+}
+@media  screen and (max-width: 1250px) {
+    .services-cartagena {
+        padding: 0 30px;
+    }
+}
+@media  screen and (max-width: 900px) {
+    
+    .services-cartagena {
+        &__carousel {
+            flex-basis: 100%;
+    
+        }
+        &__infos {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            align-items: center;
+    
+        }
+        &__category {
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $bleu-fonce;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 9px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0em;
+        }
+        &__reviews {
+            font-size: 9px;
+        }
+        &__location {
+            font-size: 11px;
+            .icon-location {
+                height: 15px;
+                margin-right: 10px;
+            }
+        }
+        
+        &__reservation {
+            margin-top: -50px;
+            flex-basis: 100%;
+            z-index: 2;
+        }
+        .reservation-card__header {
+            padding-bottom: 0;
+            height: 100px;
+            .price {
+                font-family: 'Open Sans';
+                display: flex;
+                flex-basis: 100%;
+                color: $typo-fonce;
+                font-size: 26px;
+                margin: 0;
+                height: 30px;
+            }
+            .low-cost {
+                font-size: 16px;
+                
+            }
+            .like {
+                top: -10px;
+                right: -10px;
+            }
+        }
+        .reservation-card__tuto {
+            >div {
+                flex-wrap: nowrap;
+                align-items: flex-start;
+            }
+            > div > div:nth-child(1) > img {
+                height: 20px;
+            }
+        }
+    }
+}
