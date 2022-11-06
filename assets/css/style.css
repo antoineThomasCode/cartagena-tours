@@ -437,12 +437,11 @@ h6 {
   flex-basis: 100% !important;
   height: 400px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
   position: relative;
   background-color: white !important;
   border-radius: 5px;
-  column-gap: 25px;
 }
 
 #display_img {
@@ -457,7 +456,7 @@ h6 {
 }
 
 .gal_img {
-  width: 33%;
+  width: 30%;
   height: 100px;
   position: relative;
   bottom: 70px;
