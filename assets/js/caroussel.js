@@ -29,11 +29,8 @@ let arr_length = img_arr.length;
 
 (function galImgClick() {
   for (let item of gal_img) {
-    console.log(item);
-    console.log("gallery image item " + item.id + " ^^^^^^^");
     item.onclick = () => {
       display_img.src = item.src;
-      console.log(item.id);
       i = item.id;
     };
   }
@@ -42,24 +39,19 @@ let arr_length = img_arr.length;
 (function rightClick() {
   right.onclick = () => {
     i++;
-    console.log(i);
     if (i > arr_length - 1) {
       i = 0;
     }
-    console.log(img_arr[i]);
     display_img.src = img_url_array[i].src;
-    console.log(img_url_array)
   };
 })();
 
 (function leftClick() {
   left.onclick = () => {
     i--;
-    console.log(i);
     if (i < 0) {
       i = arr_length - 1;
     }
-    console.log(img_arr[i]);
     display_img.src = img_url_array[i].src;
   };
 })();

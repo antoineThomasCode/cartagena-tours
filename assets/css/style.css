@@ -442,6 +442,7 @@ h6 {
   position: relative;
   background-color: white !important;
   border-radius: 5px;
+  column-gap: 25px;
 }
 
 #display_img {
@@ -462,15 +463,10 @@ h6 {
   bottom: 70px;
   border-radius: 20px;
   object-fit: cover;
-  margin: 0 30px;
 }
 
 .gal_img:hover {
   cursor: pointer;
-}
-
-.gal_img-middle {
-  margin: 0 20px;
 }
 
 @media only screen and (min-width: 900px) {

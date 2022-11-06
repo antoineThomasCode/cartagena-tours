@@ -79,6 +79,7 @@
     position: relative;
     background-color: white !important;
     border-radius: 5px;
+    column-gap: 25px;
   }
   #display_img {
     position: absolute;
@@ -97,15 +98,12 @@
     bottom: 70px;
     border-radius: 20px;
     object-fit: cover;
-    margin: 0 30px;
     
   }
   .gal_img:hover {
     cursor: pointer;
   }
-  .gal_img-middle {
-    margin: 0 20px;
-  }
+
   @media only screen and (min-width: 900px) {
     .caroussel {
       width: 400px;
